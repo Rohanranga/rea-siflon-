@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Phase 2 Batch 1 — Resources + About
+   ========================================================================== */
+.resources-section { padding-block: var(--space-8); }
+.resources-empty-state { margin-top: var(--space-6); padding: var(--space-8); border: 1px dashed var(--color-border); border-radius: var(--radius-lg); background: var(--color-bg-alt); text-align: center; }
+.resources-empty-title { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 700; color: var(--color-navy); margin: 0 0 var(--space-2); }
+.resources-empty-copy { color: var(--color-fg-muted); line-height: var(--leading-relaxed); margin: 0; max-width: 60ch; margin-inline: auto; }
+.resources-category-grid { display: grid; gap: var(--space-6); margin-top: var(--space-6); grid-template-columns: 1fr; }
+@media (min-width: 768px) { .resources-category-grid { grid-template-columns: repeat(2, 1fr); } }
+.resources-category-card { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-5); }
+.resources-category-title { font-family: var(--font-display); font-size: var(--text-base); font-weight: 700; color: var(--color-navy); margin: 0 0 var(--space-2); }
+.resources-category-desc { font-size: var(--text-sm); color: var(--color-fg-muted); margin: 0 0 var(--space-3); }
+.resources-doc-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--space-3); }
+.resources-doc-link { color: var(--color-accent); font-weight: 600; font-size: var(--text-sm); }
+.resources-doc-link:hover { text-decoration: underline; }
+.resources-doc-meta { display: block; font-size: var(--text-xs); color: var(--color-fg-muted); margin-top: 2px; }
+
+.about-intro-copy { color: var(--color-fg-muted); line-height: var(--leading-relaxed); max-width: 65ch; margin-top: var(--space-4); }
+.about-milestone-list { list-style: none; padding: 0; margin: var(--space-6) 0 0; display: flex; flex-direction: column; gap: var(--space-5); }
+.about-milestone-item { display: grid; grid-template-columns: 80px 1fr; gap: var(--space-4); align-items: start; }
+.about-milestone-year { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 800; color: var(--color-accent); }
+.about-milestone-body p { margin: 0 0 var(--space-2); line-height: var(--leading-relaxed); color: var(--color-fg); }
+.about-milestone-source { font-size: var(--text-xs); color: var(--color-fg-muted); font-style: italic; }
+.about-division-grid { display: grid; gap: var(--space-4); margin-top: var(--space-6); grid-template-columns: 1fr; }
+@media (min-width: 768px) { .about-division-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .about-division-grid { grid-template-columns: repeat(4, 1fr); } }
+.about-division-card { display: block; padding: var(--space-5); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-bg); transition: border-color var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out); }
+.about-division-card:hover { border-color: var(--color-accent); transform: translateY(-2px); }
+.about-division-card h3 { font-family: var(--font-display); font-size: var(--text-base); font-weight: 700; color: var(--color-navy); margin: 0 0 var(--space-1); }
+.about-division-card p { font-size: var(--text-sm); color: var(--color-fg-muted); margin: 0; }
+.about-division-card.is-pending { border-color: var(--color-amber); }
+.about-cta-card { padding: var(--space-8); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-bg-alt); }

@@ -1,0 +1,98 @@
+$ next dev
+ ⚠ Port 3000 is in use by an unknown process, using available port 3006 instead.
+   ▲ Next.js 15.5.29
+   - Local:        http://localhost:3006
+   - Network:      http://192.168.29.23:3006
+
+ ✓ Starting...
+ ✓ Ready in 3s
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 3.4s (671 modules)
+ GET /contact 200 in 3889ms
+ GET /contact 200 in 88ms
+ ○ Compiling /quality ...
+ ✓ Compiled /quality in 609ms (680 modules)
+ GET /quality 200 in 924ms
+ ✓ Compiled in 560ms (256 modules)
+ ✓ Compiled in 1185ms (256 modules)
+ ✓ Compiled /contact in 130ms (416 modules)
+ GET /contact 200 in 396ms
+ GET /contact 200 in 113ms
+ ✓ Compiled /quality in 123ms (424 modules)
+ GET /quality 200 in 435ms
+ ⨯ Error: Could not find the module "C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\node_modules\.pnpm\next@15.5.29_@types+node@22_c8665b6ed2e82eba8fab7a8297499aa6\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '2846774972'
+}
+ ⨯ Error: Could not find the module "C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\node_modules\.pnpm\next@15.5.29_@types+node@22_c8665b6ed2e82eba8fab7a8297499aa6\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '1903231610'
+}
+ ⨯ Error: Could not find the module "C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\node_modules\.pnpm\next@15.5.29_@types+node@22_c8665b6ed2e82eba8fab7a8297499aa6\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '2572752633'
+}
+ ⨯ Error: Could not find the module "C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\node_modules\.pnpm\next@15.5.29_@types+node@22_c8665b6ed2e82eba8fab7a8297499aa6\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '2572752633'
+}
+ ⨯ Error: Could not find the module "C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\node_modules\.pnpm\next@15.5.29_@types+node@22_c8665b6ed2e82eba8fab7a8297499aa6\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '2572752633'
+}
+ ⨯ Error: Could not find the module "C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\node_modules\.pnpm\next@15.5.29_@types+node@22_c8665b6ed2e82eba8fab7a8297499aa6\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '2572752633'
+}
+ ⨯ Error: Could not find the module "C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\node_modules\.pnpm\next@15.5.29_@types+node@22_c8665b6ed2e82eba8fab7a8297499aa6\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '2572752633'
+}
+ ⨯ Error: Could not find the module "C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\node_modules\.pnpm\next@15.5.29_@types+node@22_c8665b6ed2e82eba8fab7a8297499aa6\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '2846774972'
+}
+ ⨯ Error: Could not find the module "C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\node_modules\.pnpm\next@15.5.29_@types+node@22_c8665b6ed2e82eba8fab7a8297499aa6\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '2846774972'
+}
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+  digest: '221653522'
+}
+ ⨯ Error: Could not find the module "C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\node_modules\.pnpm\next@15.5.29_@types+node@22_c8665b6ed2e82eba8fab7a8297499aa6\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '3188045239'
+}
+[TypeError: __webpack_modules__[moduleId] is not a function]
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function]
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+  page: '/contact'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 2.1s (1029 modules)
+ GET /contact 500 in 5145ms
+ GET /contact 200 in 254ms
+ GET /contact 200 in 77ms
+ ✓ Compiled /quality in 241ms (628 modules)
+ GET /quality 200 in 684ms
+ GET /contact 200 in 92ms
+ GET /contact 200 in 65ms
+ GET /contact 200 in 89ms
+ GET /contact 200 in 79ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 558ms (932 modules)
+ GET /contact 404 in 820ms
+ ✓ Compiled in 613ms (409 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\.next\cache\webpack\client-development\0.pack.gz_' -> 'C:\Users\uniqu\Downloads\wetransfer_siflon_2026-10-31_0646\website\siflon-group-website-new\.next\cache\webpack\client-development\0.pack.gz'
+ ✓ Compiled in 892ms (409 modules)
+ ✓ Compiled in 608ms (409 modules)
+ ✓ Compiled in 484ms (409 modules)
+ ✓ Compiled in 501ms (409 modules)
+ ✓ Compiled in 1397ms (409 modules)

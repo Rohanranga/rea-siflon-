@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Phase 2 Batch 2 — Contact page
+   ========================================================================== */
+.contact-page-section { padding-block: var(--space-8); }
+.contact-page-grid { display: grid; gap: var(--space-6); grid-template-columns: 1fr; }
+@media (min-width: 1024px) { .contact-page-grid { grid-template-columns: 1fr 1.4fr; } }
+.contact-info-card, .contact-form-card { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-6); }
+.contact-info-list { list-style: none; padding: 0; margin: var(--space-5) 0 0; display: flex; flex-direction: column; gap: var(--space-5); }
+.contact-info-list li { display: flex; gap: var(--space-3); align-items: flex-start; }
+.contact-info-list svg { color: var(--color-accent); flex-shrink: 0; margin-top: 2px; }
+.contact-info-label { display: block; font-size: var(--text-xs); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 2px; }
+.contact-info-value { display: block; color: var(--color-fg); line-height: var(--leading-relaxed); }
+a.contact-info-value:hover { color: var(--color-accent); text-decoration: underline; }
+.contact-form { display: flex; flex-direction: column; gap: var(--space-4); margin-top: var(--space-4); }
+.cf-row { display: grid; gap: var(--space-4); grid-template-columns: 1fr; }
+@media (min-width: 640px) { .cf-row { grid-template-columns: 1fr 1fr; } }
+.cf-field { display: flex; flex-direction: column; gap: var(--space-1); font-size: var(--text-sm); }
+.cf-field span { color: var(--color-fg); font-weight: 600; }
+.cf-field input, .cf-field select, .cf-field textarea { padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-sm); font: inherit; background: var(--color-bg); color: var(--color-fg); }
+.cf-field input:focus, .cf-field select:focus, .cf-field textarea:focus { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+.cf-error { color: #b00020; font-size: var(--text-xs); }
+.cf-checkbox { display: flex; gap: var(--space-2); align-items: flex-start; font-size: var(--text-sm); }
+.contact-success, .contact-unconfigured { padding: var(--space-6); text-align: center; }
+.contact-success h3, .contact-unconfigured h3 { font-family: var(--font-display); color: var(--color-navy); }
+.contact-error-banner { padding: var(--space-3); background: #fdecea; color: #b00020; border-radius: var(--radius-sm); font-size: var(--text-sm); }

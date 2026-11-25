@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+
+# next
+.next/
+.out/
+.open-next/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+
+# env
+.env
+.env.local
+.env.*.local
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# vscode
+.vscode/settings.json
+.vscode/*.local
+
+# internal assets - documents, certificates and pending review files
+internal-assets/
+
+# wrangler cache
+.wrangler/

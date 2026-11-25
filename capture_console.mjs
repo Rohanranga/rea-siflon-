@@ -1,0 +1,27 @@
+import { chromium } from 'playwright';
+
+const urls = [
+  'http://localhost:3001/',
+  'http://localhost:3001/contact',
+];
+
+const browser = await chromium.launch({ headless: true });
+const page = await browser.newPage();
+
+const consoleLogs = [];
+page.on('console', msg => consoleLogs.push({ type: msg.type(), text: msg.text(), location: msg.location() }));
+page.on('pageerror', err => consoleLogs.push({ type: 'error', text: err.message, stack: err.stack }));
+
+for (const url of urls) {
+  consoleLogs.length = 0;
+  console.log(`\n=== ${url} ===`);
+  await page.goto(url, { waitUntil: 'networkidle', timeout: 30000 });
+  await page.waitForTimeout(2000);
+  
+  consoleLogs.forEach(log => {
+    console.log(`[${log.type}] ${log.text}`);
+    if (log.stack) console.log(`  Stack: ${log.stack}`);
+  });
+}
+
+await browser.close();
