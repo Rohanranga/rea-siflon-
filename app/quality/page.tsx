@@ -10,6 +10,7 @@ import {
 } from "@/data/quality-records";
 import Link from "next/link";
 import { BadgeCheck, Info } from "lucide-react";
+import { siteUrl } from "@/lib/site";
 
 function RecordCard({ record }: { record: QualityRecord }) {
   return (
@@ -39,8 +40,54 @@ function RecordCard({ record }: { record: QualityRecord }) {
 }
 
 export const metadata: Metadata = {
-  title: "Quality & Regulatory | Siflon Group.",
-  description: "Verified quality, certification and licensing information for the Siflon Group businesses.",
+  title: "Quality & Regulatory | Siflon Group",
+  description: "Verified quality certifications, WHO-GMP status, Form-25 manufacturing licence and regulatory compliance for Siflon Group businesses. Transparent, evidence-based quality data.",
+  keywords: [
+    "Siflon Group quality",
+    "WHO-GMP certified pharmaceutical",
+    "Form-25 manufacturing licence",
+    "pharmaceutical quality compliance",
+    "veterinary API quality standards",
+    "animal health regulatory",
+    "industrial polymer certification",
+    "ISO 9001 manufacturing",
+    "HACCP certified",
+    "ZED certification India",
+    "pharmaceutical licence verification",
+    "quality assurance pharma",
+    "manufacturing compliance India",
+  ],
+  openGraph: {
+    title: "Quality & Regulatory | Siflon Group",
+    description: "Verified quality certifications, WHO-GMP status, Form-25 manufacturing licence and regulatory compliance for Siflon Group businesses.",
+    url: siteUrl("/quality"),
+    siteName: "Siflon Group",
+    images: [
+      {
+        url: siteUrl("/images/og-quality.jpg"),
+        width: 1200,
+        height: 630,
+        alt: "Siflon Group Quality & Regulatory Compliance",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@siflongroup",
+    creator: "@siflongroup",
+    title: "Quality & Regulatory | Siflon Group",
+    description: "WHO-GMP certified, Form-25 licensed pharmaceutical manufacturing. Transparent quality data.",
+    images: [siteUrl("/images/og-quality.jpg")],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: siteUrl("/quality"),
+  },
 };
 
 export default function QualityPage() {
