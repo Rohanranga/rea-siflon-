@@ -10,10 +10,56 @@ import { PeopleGallery } from "@/components/people-gallery";
 import { ExhibitionGallery } from "@/components/exhibition-gallery";
 import { StoryTimeline } from "@/components/story-timeline";
 import { ContactForm } from "@/components/contact-form";
+import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Siflon Group | Diverse Expertise. One Group.",
-  description: "Discover Siflon Group's specialist businesses across pharmaceuticals, animal health and advanced industrial materials.",
+  description: "Discover Siflon Group's specialist businesses across pharmaceuticals, animal health and advanced industrial materials. WHO-GMP certified manufacturing, Form-25 licensed, exporting to 60+ countries since 1996.",
+  keywords: [
+    "Siflon Group",
+    "pharmaceutical manufacturing",
+    "veterinary API",
+    "animal health",
+    "industrial polymers",
+    "WHO-GMP certified",
+    "Form-25 manufacturing licence",
+    "API manufacturing India",
+    "bulk drug manufacturer",
+    "contract manufacturing",
+    "pharmaceutical export",
+    "quality compliance",
+  ],
+  openGraph: {
+    title: "Siflon Group | Diverse Expertise. One Group.",
+    description: "WHO-GMP certified pharmaceutical manufacturing, veterinary APIs, animal health & industrial polymers. 60+ export countries since 1996.",
+    url: siteUrl("/"),
+    siteName: "Siflon Group",
+    images: [
+      {
+        url: siteUrl("/images/og-default.jpg"),
+        width: 1200,
+        height: 630,
+        alt: "Siflon Group - Pharmaceutical, Animal Health & Industrial Materials Manufacturing",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@siflongroup",
+    creator: "@siflongroup",
+    title: "Siflon Group | Diverse Expertise. One Group.",
+    description: "WHO-GMP certified pharmaceutical manufacturing, veterinary APIs, animal health & industrial polymers. 60+ export countries since 1996.",
+    images: [siteUrl("/images/og-default.jpg")],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: siteUrl("/"),
+  },
 };
 
 export default function HomePage() {

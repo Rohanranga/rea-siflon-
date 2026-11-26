@@ -5,10 +5,56 @@ import { BreadcrumbJsonLd } from "@/components/json-ld";
 import { SectionHeading } from "@/components/section-heading";
 import { ContactForm } from "@/components/contact-form";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact Siflon Group | Enquiries.",
-  description: "Reach out for product availability, technical documentation, partnership or export enquiries.",
+  title: "Contact Siflon Group | Enquiries & Partnerships",
+  description: "Reach out for product availability, technical documentation, partnership or export enquiries. WHO-GMP certified manufacturing, Form-25 licensed, 60+ export countries.",
+  keywords: [
+    "contact Siflon Group",
+    "pharmaceutical manufacturing enquiry",
+    "veterinary API partnership",
+    "animal health contact",
+    "industrial polymer supplier",
+    "contract manufacturing India",
+    "export enquiry pharmaceutical",
+    "WHO-GMP facility contact",
+    "Form-25 manufacturing licence",
+    "Siflon Pharma contact",
+    "Siflon Drugs contact",
+    "Siflon Polymers contact",
+  ],
+  openGraph: {
+    title: "Contact Siflon Group | Enquiries & Partnerships",
+    description: "Reach out for product availability, technical documentation, partnership or export enquiries. WHO-GMP certified manufacturing, Form-25 licensed, 60+ export countries.",
+    url: siteUrl("/contact"),
+    siteName: "Siflon Group",
+    images: [
+      {
+        url: siteUrl("/images/og-contact.jpg"),
+        width: 1200,
+        height: 630,
+        alt: "Contact Siflon Group - Pharmaceutical & Industrial Manufacturing",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@siflongroup",
+    creator: "@siflongroup",
+    title: "Contact Siflon Group | Enquiries & Partnerships",
+    description: "WHO-GMP certified pharmaceutical manufacturing, veterinary APIs, animal health & industrial polymers. 60+ export countries since 1996.",
+    images: [siteUrl("/images/og-contact.jpg")],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: siteUrl("/contact"),
+  },
 };
 
 export default function ContactPage() {
